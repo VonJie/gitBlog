@@ -6,8 +6,9 @@
 
 ## 2017年
 
+1. [Lunix 系统命令](https://github.com/VonJie/gitBlog/issues/7)
 1. [Chrome Puppeteer](https://github.com/VonJie/gitBlog/issues/6)
-1. [使用Hexo搭建个人博客](https://github.com/VonJie/gitBlog/issues/5)
+1. [Hexo 搭建个人博客](https://github.com/VonJie/gitBlog/issues/5)
 
 ## 2016年
 
