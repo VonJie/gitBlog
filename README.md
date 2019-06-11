@@ -6,6 +6,7 @@
 
 ## 2017年
 
+1. [使用Hexo搭建个人博客](https://github.com/VonJie/gitBlog/issues/6)
 1. [使用Hexo搭建个人博客](https://github.com/VonJie/gitBlog/issues/5)
 
 ## 2016年
