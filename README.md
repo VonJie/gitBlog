@@ -1,11 +1,14 @@
-# gitBlog
+# issuesBlog
 该项目主要用于个人平时工作中的代码笔记、问题收集，方便日后翻阅查找。
 
 最开始的博客实用 hexo 搭建起来，但是每次都要编写发布觉得很烦。
+
 使用 issues 作为博客，主要是省去了发布流程，而且搜索功能很实用。
 
 ## 2017年
 
+1. [Git 分布式版本控制系统](https://github.com/VonJie/gitBlog/issues/10)
+1. [CURL 文件传输工具](https://github.com/VonJie/gitBlog/issues/9)
 1. [Vim 编辑器](https://github.com/VonJie/gitBlog/issues/8)
 1. [Lunix 系统](https://github.com/VonJie/gitBlog/issues/7)
 1. [Chrome Puppeteer](https://github.com/VonJie/gitBlog/issues/6)
