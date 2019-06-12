@@ -206,6 +206,11 @@
 
   /**
    * Create a cached version of a pure function.
+   * 创建一个缓存版本的纯函数，通过参数缓存计算结果
+   * var fn = function (str) { console.log('calculating') return 'hello ' + str };
+   * var aFn = cached(fn);
+   * aFn('world') => calculating => hello world
+   * aFn('world') => hello world  直接从对象读取结果，不必计算
    */
   function cached (fn) {
     var cache = Object.create(null);
@@ -217,6 +222,7 @@
 
   /**
    * Camelize a hyphen-delimited string.
+   * 驼峰化一个连字符连接的字符串
    */
   var camelizeRE = /-(\w)/g;
   var camelize = cached(function (str) {
