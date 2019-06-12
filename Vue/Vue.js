@@ -10,23 +10,27 @@
 }(this, function () { 'use strict';
 
   /*  */
-
+  // 空对象, 并冻结使其不可修改
   var emptyObject = Object.freeze({});
 
   // These helpers produce better VM code in JS engines due to their
   // explicitness and function inlining.
+  // 未定义
   function isUndef (v) {
     return v === undefined || v === null
   }
-
+  
+  // 已定义
   function isDef (v) {
     return v !== undefined && v !== null
   }
-
+                     
+  // 判断真
   function isTrue (v) {
     return v === true
   }
 
+  // 判断假
   function isFalse (v) {
     return v === false
   }
@@ -34,6 +38,7 @@
   /**
    * Check if value is primitive.
    */
+  // 判断是否原始值
   function isPrimitive (value) {
     return (
       typeof value === 'string' ||
