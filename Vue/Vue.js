@@ -54,6 +54,7 @@
    * Objects from primitive values when we know the value
    * is a JSON-compliant type.
    */
+  // 判断对象的方法
   function isObject (obj) {
     return obj !== null && typeof obj === 'object'
   }
@@ -66,15 +67,27 @@
   function toRawType (value) {
     return _toString.call(value).slice(8, -1)
   }
+  // Object.prototype.toString.call({})  =>  "[object Object]"
+  // Object.prototype.toString.call({}).slice(8, -1)  =>  "Object"    
+  // Object.prototype.toString.call([]).slice(8, -1)  =>  "Array"
+  // Object.prototype.toString.call('').slice(8, -1)  =>  "String"
+  // Object.prototype.toString.call(/a/).slice(8, -1)  =>  "RegExp"
+  // Object.prototype.toString.call(()=>{}).slice(8, -1)  =>  "Function"
+  // Object.prototype.toString.call(null).slice(8, -1)  =>  "Null"
+  // Object.prototype.toString.call(undefined).slice(8, -1)  =>  "Undefined"
+  // Object.prototype.toString.call(new Set()).slice(8, -1)  =>  "Set"
+  //  Object.prototype.toString.call(new Map()).slice(8, -1)  =>  "Map"
 
   /**
    * Strict object type check. Only returns true
    * for plain JavaScript objects.
    */
+  // 纯对象
   function isPlainObject (obj) {
     return _toString.call(obj) === '[object Object]'
   }
-
+ 
+  // 正则
   function isRegExp (v) {
     return _toString.call(v) === '[object RegExp]'
   }
@@ -82,11 +95,13 @@
   /**
    * Check if val is a valid array index.
    */
+  // 有效的数组索引值
   function isValidArrayIndex (val) {
     var n = parseFloat(String(val));
     return n >= 0 && Math.floor(n) === n && isFinite(val)
   }
 
+  // 是否为 Promise 对象
   function isPromise (val) {
     return (
       isDef(val) &&
@@ -97,6 +112,18 @@
 
   /**
    * Convert a value to a string that is actually rendered.
+   */
+  // {a: 1}.toString() => [object, Object]
+  /**
+   * JSON.stringify({a: 1, b: '2', c: 3}, function(key, value){
+   *   if (value === 1) return undefined;
+   *   return value;
+   * }, 2)
+   * => 
+   * "{
+   *   "b": "2",
+   *   "c": 3
+   * }"
    */
   function toString (val) {
     return val == null
@@ -132,9 +159,16 @@
       ? function (val) { return map[val.toLowerCase()]; }
       : function (val) { return map[val]; }
   }
+  /**
+   * makeMap('a,b,c', true)('B');
+   * => true 
+   * list => ["a", "b", "c"]
+   * map => {a: true, b: true, c: true}
+   */
 
   /**
    * Check if a tag is a built-in tag.
+   * 检查是否为内置标记
    */
   var isBuiltInTag = makeMap('slot,component', true);
 
