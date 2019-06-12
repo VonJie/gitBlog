@@ -174,11 +174,13 @@
 
   /**
    * Check if an attribute is a reserved attribute.
+   * 检查是否为保留属性
    */
   var isReservedAttribute = makeMap('key,ref,slot,slot-scope,is');
 
   /**
    * Remove an item from an array.
+   * 删除数组项
    */
   function remove (arr, item) {
     if (arr.length) {
@@ -191,6 +193,11 @@
 
   /**
    * Check whether an object has the property.
+   * 检查对是否拥有某属性，而不在原型链上
+   * Object.prototype.a = 1;
+   * var test = {};
+   * test.a => 1
+   * Object.prototype.hasOwnProperty(test, 'a') => false
    */
   var hasOwnProperty = Object.prototype.hasOwnProperty;
   function hasOwn (obj, key) {
