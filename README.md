@@ -5,6 +5,10 @@
 
 使用 issues 作为博客，主要是省去了发布流程，而且搜索功能很实用。
 
+## 2019年
+1. [阿里云 ECS](https://github.com/VonJie/gitBlog/issues/18)
+1. [关于跨域问题](https://github.com/VonJie/gitBlog/issues/17)
+
 ## 2018年
 1. [Node-ORM2 框架](https://github.com/VonJie/gitBlog/issues/16)
 1. [GraphQL 查询](https://github.com/VonJie/gitBlog/issues/15)
