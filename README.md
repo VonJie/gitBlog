@@ -6,6 +6,7 @@
 使用 issues 作为博客，主要是省去了发布流程，而且搜索功能很实用。
 
 ## 2019年
+1. [理解 JavaScript 原型链](https://github.com/VonJie/gitBlog/issues/21)
 1. [create-react-app 快速创建 react 应用](https://github.com/VonJie/gitBlog/issues/20)
 1. [微信 H5 开发问题收集](https://github.com/VonJie/gitBlog/issues/19)
 1. [阿里云 ECS](https://github.com/VonJie/gitBlog/issues/18)
