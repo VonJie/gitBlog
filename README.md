@@ -6,6 +6,7 @@
 博客内容包括项目记录、学习笔记、问题收集等
 
 ## 2019年
+1. [Canvas 生成小程序码海报](https://github.com/VonJie/gitBlog/issues/23)
 1. [Http 缓存](https://github.com/VonJie/gitBlog/issues/22)
 1. [JavaScript 继承与原型链](https://github.com/VonJie/gitBlog/issues/21)
 1. [create-react-app 快速创建 react 应用](https://github.com/VonJie/gitBlog/issues/20)
